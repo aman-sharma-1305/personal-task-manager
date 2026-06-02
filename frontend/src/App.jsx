@@ -9,7 +9,8 @@ import SearchBar from "./components/SearchBar";
 import "./App.css";
 
 function App() {
-  const API = "http://localhost:5001/api/tasks";
+  const API =
+  import.meta.env.VITE_API_URL;
 
   const [tasks, setTasks] = useState([]);
   const [filter, setFilter] = useState("all");
@@ -149,7 +150,7 @@ function App() {
     <div className="container">
       {/* Header */}
       <div className="header">
-        <h1>🚀 TaskFlow</h1>
+        <h1>⚡ TaskFlow</h1>
 
         <p>
           Organize your work and stay productive
